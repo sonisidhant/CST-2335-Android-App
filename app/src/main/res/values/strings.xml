@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="Toolbar">Toolbar</string>
+    <string name="buttonOk">Ok</string>
+    <string name="dialogTitle">Do you want to go Back</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="one">One</string>
+</resources>

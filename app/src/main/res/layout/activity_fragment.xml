@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/layout_delete_message">
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+
+        android:id="@+id/messageID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/messageText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:id="@+id/Calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/messageID"
+        android:layout_marginTop="28dp"
+        android:textSize="20dp" />
+
+    <TextView
+
+        android:id="@+id/Carbohydrates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Calories"
+        android:layout_alignParentStart="true" />
+    <TextView
+
+        android:id="@+id/Fats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Carbohydrates"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Fats"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

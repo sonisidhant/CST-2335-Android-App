@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.sidhant.project.TestToolbar"
+    android:background="@drawable/unnamed"
+    >
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Button"
+    android:text="Click here to add data"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:background="#336bff" />
+</android.support.constraint.ConstraintLayout>

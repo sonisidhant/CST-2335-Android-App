@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sidhant.project.MainActivity2"
+    android:weightSum="1"
+    android:background="@drawable/untitled"
+    >
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+    <TextView
+        android:id="@+id/EnterFoodType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FoodType:"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/textChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/Calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Calories"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:textColor="#000000"
+         />
+    <TextView
+        android:id="@+id/fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fat"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/Carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carbs"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        />
+
+
+
+        <Button
+            android:id="@+id/sendChat"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:onClick="add"
+            android:text="add" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:onClick="b"
+        android:text="Search List" />
+
+
+    <Button
+        android:id="@+id/ShowList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ViewContact"
+        android:text="Click here for list" />
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

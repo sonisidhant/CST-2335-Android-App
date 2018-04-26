@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#cee4de"
+    tools:context="com.example.sidhant.project.Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/GHHH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/EnterFoodType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_above="@+id/Calories"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="19dp"
+                    android:text="FoodType: "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/FoodType"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Enter Food Type" />
+
+                <TextView
+                    android:id="@+id/Calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calories"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="33dp"
+                    android:layout_above="@+id/Fat"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/Fat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_above="@+id/Carbohydrates"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="Fat:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Carbohydrates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="29dp"
+                    android:textColor="#000000"
+                    android:text="Carbohydrates"
+                    android:textSize="20dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FoodType"
+                    android:layout_alignStart="@+id/FoodType"
+                    android:layout_marginStart="75dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/EnterFoodType"
+                android:text="Search" />
+
+            <EditText
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/button"
+                android:layout_below="@+id/button"
+                android:textColor="#FF0000"
+                android:layout_marginTop="55dp"
+                android:text="Food Type" />
+
+            <EditText
+                android:id="@+id/calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/display"
+                android:layout_below="@+id/display"
+                android:ems="10"
+                android:textColor="#FF0000"
+                android:inputType="textPersonName"
+                android:text="Calories" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText"
+                android:layout_below="@+id/editText"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:textColor="#FF0000"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/calories"
+                android:layout_below="@+id/calories"
+                android:ems="10"
+                android:textColor="#FF0000"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button3"
+            android:layout_marginBottom="22dp"
+            android:text="Update Data" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp"
+            android:text="Delete Data" />
+    </LinearLayout>+
+</LinearLayout>
